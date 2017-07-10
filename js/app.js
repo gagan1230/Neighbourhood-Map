@@ -94,14 +94,14 @@ function googleError(){
     alert("Error in Loading Map");
 }
 
-function getRestaurants(id){
+function getRestaurants(){
     $.ajax({
         url: 'https://developers.zomato.com/api/v2.1/search?',
         headers: {
             'Accept' : 'application/json',
             'user-key' : 'da96ba1b274737a95f9e8ca498a3c773'
         },
-        data: 'entity_id=' + id + '&entity_type=city&q=restaurants&count=15&lat=30.7333&lon=76.7794&radius=10000&sort=rating&order=desc',
+        data: 'entity_id=12&entity_type=city&q=restaurants&count=15&lat=30.7333&lon=76.7794&radius=10000&sort=rating&order=desc',
         async: true
     }).done(function(data){
         for(var i = 0; i < data.restaurants.length; i++){
