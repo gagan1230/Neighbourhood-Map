@@ -1,0 +1,99 @@
+html,
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+.container{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+#map {
+    height: 100%;
+}
+.toggleListings{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.toggleList{
+    display: none;
+}
+.searchbox{
+    position: absolute;
+    z-index: 1;
+    background: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 48px;
+    border-bottom: 1px solid transparent;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.searchbar{
+    width: 100%;
+    border: none;
+    position: absolute;
+    font-size: 15px;
+    background-image: url('images/search.png');
+    background-position: 210px 15px;
+    background-size: 1.3em;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 60px;
+    margin-bottom: 5px;
+}
+.itemList{
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    margin-top: 60px;
+    margin-left: 10px;
+    scroll-behavior: auto;
+    height: 200px;
+}
+.list-group{
+    height: 300px;
+    overflow: auto;
+}
+.listArrow{
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    margin: 8px 14px;
+}
+.list-group{
+    cursor: pointer;
+}
+.list-group-item:hover{
+    background-color: #2caae1;
+}
+.infoWindow{
+    text-align: center;
+    width: 410px;
+    height: 300px;
+    overflow: auto;
+    white-space: nowrap;
+    margin-top: 2px;
+}
+.infoImage{
+    height: 200px;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 2px;
+}
+@media (max-width: 992px){
+    .searchbox{
+        width: 350px;
+    }
+    .itemList{
+        width: 350px;
+    }
+    #map{
+        border: 3px solid #999;
+    }
+}
